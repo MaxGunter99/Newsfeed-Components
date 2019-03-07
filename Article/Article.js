@@ -10,7 +10,9 @@ class Article {
     
 
     // Using your expandButton reference, update the text on your expandButton to say "expand"
-    
+    this.expandButton.style.border = '1px solid grey';
+    this.expandButton.style.fontSize = '1em';
+    this.expandButton.style.borderRadius = '5px';
     
     // Set a click handler on the expandButton reference, calling the expandArticle method.
     this.expandButton.addEventListener('click', () => this.expandArticle());
@@ -19,8 +21,6 @@ class Article {
 
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
-    
-
     this.domElement.classList.toggle('article');
 
   }
